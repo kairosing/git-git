@@ -11,7 +11,9 @@ echo 123;
     <title>Document</title>
     <script src="script.js"></script>
     <style>
-
+        *{
+            margin: 0;
+        }
     </style>
 </head>
 <body>
