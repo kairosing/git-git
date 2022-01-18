@@ -1,22 +1,60 @@
 <?php
-echo 123;
-?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="script.js"></script>
-    <style>
-        *{
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
 
-</body>
-</html>
+class Person {
+
+    public $name;
+    public $surname;
+    private $content;
+    protected $title;
+
+    /**
+     * Person constructor.
+     * @param $name
+     * @param $surname
+     * @param $content
+     * @param $title
+     */
+    public function __construct($name, $surname, $content, $title)
+    {
+        $this->name = $name;
+        $this->surname = $surname;
+        $this->content = $content;
+        $this->title = $title;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSurname()
+    {
+        return $this->surname;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+}
+
+$person = new Person('lion','liee','content','title');
+var_dump($person);
